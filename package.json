@@ -1,0 +1,28 @@
+{
+  "name": "config-environment",
+  "version": "0.0.1",
+  "description": "Get your environment variables from a .env file in Node 20, without dependencies, and with type checking",
+  "main": "dist/index",
+  "types": "dist/types/index",
+  "keywords": [
+    "env",
+    "environment",
+    "variables",
+    "config",
+    "configuration",
+    "node v20",
+    "typescript",
+    "without dependencies"
+  ],
+  "author": "Pxndxs",
+  "license": "MIT",
+  "scripts": {
+    "build:dev": "rm -rf dist && npx tsc --watch",
+    "build:prod": "rm -rf dist && npx tsc",
+    "start:dev": "node --watch --env-file=.env ./dist/main.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.20",
+    "typescript": "^5.3.3"
+  }
+}
