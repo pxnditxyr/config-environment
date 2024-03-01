@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "esNext",
-    "module": "esNext",
+    "module": "commonjs",
     "rootDir": "src",
     "outDir": "dist",
     "sourceMap": true,
@@ -17,3 +17,4 @@
   },
   "include": [ "src/**/*" ],
 }
+

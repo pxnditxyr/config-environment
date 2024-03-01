@@ -17,6 +17,7 @@
   "author": "Pxndxs",
   "license": "MIT",
   "scripts": {
+    "prepare": "npm run build:prod",
     "build:dev": "rm -rf dist && npx tsc --watch",
     "build:prod": "rm -rf dist && npx tsc",
     "start:dev": "node --watch --env-file=.env ./dist/main.js"
@@ -26,3 +27,4 @@
     "typescript": "^5.3.3"
   }
 }
+

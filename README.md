@@ -27,7 +27,18 @@ npm i config-environment
 
 ## Usage 🚀
 
-Run the application in Development Mode: 🚀
+> [!IMPORTANT]
+> For deployment on Node.js version 20 without any dependencies, it is crucial to initiate the application with the following command, incorporating the --env-file flag to ensure environment variables are correctly loaded:
+>
+> ```
+> node --env-file=.env index.js
+> ```
+> If you are utilizing Bun as your JavaScript runtime, the process is streamlined. Simply execute:
+> ```
+> bun index.js
+> ```
+
+### Code Example 🐼
 
 ```bash
 import { ConfigEnvironment } from 'config-environment'
@@ -41,6 +52,7 @@ const envs = {
   TEST_GET: ConfigEnvironment.get( 'TEST_GET' ).getValue()
 }
 ```
+
 
 ## Technologies Used 🛠️
 
