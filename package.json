@@ -1,6 +1,6 @@
 {
   "name": "config-environment",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Get your environment variables from a .env file in Node 20, without dependencies, and with type checking",
   "main": "dist/index",
   "types": "dist/types/index",
@@ -23,8 +23,7 @@
     "start:dev": "node --watch --env-file=.env ./dist/main.js"
   },
   "devDependencies": {
-    "@types/node": "^20.11.20",
+    "@types/node": "^22.10.1",
     "typescript": "^5.3.3"
   }
 }
-

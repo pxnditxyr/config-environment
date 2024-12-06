@@ -1,2 +1,2 @@
-export * from './default-messages'
-export * from './default-messages-spanish'
+export * from './default-english-messages'
+export * from './default-spanish-messages'

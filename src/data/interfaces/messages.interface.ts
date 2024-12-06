@@ -1,3 +1,11 @@
 export interface IMessages {
-  [ key: string ]: string
+  get: string
+  asString: string
+  asNumber: string
+  asBool: string
+  isRequired: string
+  isString: string
+  isNumber: string
+  isBool: string
+  isPort: string
 }

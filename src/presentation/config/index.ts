@@ -1,1 +1,1 @@
-export * from './config-enviroment'
+export * from './get'
