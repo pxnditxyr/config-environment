@@ -1,12 +1,12 @@
 <p align="center">
     <a href="https://github.com/pxnditxyr/config-environment">
-        <img width="20%" src="https://camo.githubusercontent.com/88a3d6c2df50a4514fe5058ac033ad70aa295adce83327062b7158ab647a27c9/68747470733a2f2f72656d696e642d6d652d706c7a2e6e65746c6966792e6170702f79756b692e737667" alt="Pxndxs" />
+        <img width="20%" src="./assets/logo.svg" alt="Pxndxs" />
         <h1 align="center"> Config Environments </h1>
     </a>
 </p>
 </br>
 
-# Config Environment 🌐🛠️ |  Typescript  
+# Config Environment 🌐🛠️ |  Typescript 
 
 Get your environment variables from a .env file in Node 20, without dependencies, and with type checking
 
@@ -44,12 +44,12 @@ npm i config-environment
 import { ConfigEnvironment } from 'config-environment'
 
 const envs = {
-  TEST_PORT: ConfigEnvironment.get( 'TEST_PORT' ).isPort().asNumber(),
-  TEST_STRING: ConfigEnvironment.get( 'TEST_STRING' ).asString(),
-  TEST_NUMBER: ConfigEnvironment.get( 'TEST_NUMBER' ).asNumber(),
-  TEST_BOOL: ConfigEnvironment.get( 'TEST_BOOL' ).asBool(),
-  TEST_REQUIRED: ConfigEnvironment.get( 'TEST_REQUIRED' ).isRequired().asString(),
-  TEST_GET: ConfigEnvironment.get( 'TEST_GET' ).getValue()
+  TEST_PORT: get( 'TEST_PORT', { type: 'port', message: '🚫 Port not found' } ),
+  TEST_STRING: get( 'TEST_STRING' ),
+  TEST_NUMBER: get( 'TEST_NUMBER', { type: 'number' } ),
+  TEST_BOOL: get( 'TEST_BOOL', { type: 'boolean' } ),
+  TEST_REQUIRED: get( 'TEST_REQUIRED', { required: true } ),
+  TEST_COMPLEX: get( 'TEST_COMPLEX', { type: 'port', required: true, defaultMessageLanguage: 'spanish' } )
 }
 ```
 
