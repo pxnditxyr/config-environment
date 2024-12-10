@@ -1,6 +1,6 @@
 {
   "name": "config-environment",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Get your environment variables from a .env file in Node 20, without dependencies, and with type checking",
   "main": "dist/index",
   "types": "dist/types/index",
